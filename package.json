@@ -1,6 +1,6 @@
 {
   "name": "brain-games-spectralwind",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "the first project on hexlet",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -28,5 +28,9 @@
     "@babel/core": "^7.4.3",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.3"
+  },
+  "dependencies": {
+    "@types/readline-sync": "^1.4.3",
+    "readline-sync": "^1.4.9"
   }
 }
