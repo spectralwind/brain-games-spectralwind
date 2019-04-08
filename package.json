@@ -2,7 +2,6 @@
   "name": "brain-games-spectralwind",
   "version": "0.0.1",
   "description": "the first project on hexlet",
-  "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -14,8 +13,16 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "brain games",
+    "game",
+    "pkg",
+    "package",
+    "cli"
+  ],
   "author": "Tim Petrov",
   "license": "ISC",
+  "homepage": "https://github.com/spectralwind/project-lvl1-s478#readme",
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
