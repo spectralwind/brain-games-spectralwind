@@ -1,5 +1,11 @@
 **В рамках проекта необходимо реализовать набор мини-игр, запускаемых из консоли. Эти игры похожи на то, что обычно называют "Brain Games".**
 
+# project-lvl1-s478
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/spectralwind/project-lvl1-s478)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/spectralwind/project-lvl1-s478)
+[![Build Status](https://travis-ci.org/spectralwind/spectralwind.github.io.svg?branch=master)](https://travis-ci.org/spectralwind/spectralwind.github.io)
+
 ## Пример игры:
 
 ```sh
