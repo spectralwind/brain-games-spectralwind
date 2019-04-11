@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { checkParity } from '..';
+import start from '../games/parity';
 
-// вызов: функция проверяет число на четность
-checkParity();
+start();

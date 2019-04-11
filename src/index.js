@@ -1,49 +1,28 @@
 import readlineSync from 'readline-sync';
+import { getText, getAnswer, getQuestion } from './apps-bg';
 
-console.log('Welcome to the Brain Games!');
+export default (createTheGame) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(getText(createTheGame()));
 
-// узнает имя игрока и приветствует его
-const learnName = () => {
-  const answer = readlineSync.question('May I have your name?: ');
-  if (answer === '') {
-    console.log('Hello, Player');
-    return 'Player';
-  }
-  console.log(`Hello, ${answer}`);
-  return answer;
-};
+  const userName = readlineSync.question('May I have your name?: ');
+  console.log(userName ? `Hello, ${userName}` : 'Hello, Player');
 
-// генерирует случайное целое число
-const getRandomInt = (max = 100000) => Math.floor(Math.random() * Math.floor(max));
+  const countOfRounds = 3;
 
-// проверяет число на четность
-export const checkParity = () => {
-  const countOfRounds = 3; // количество вопросов игры
-  console.log('Answer "yes" if number even otherwise answer "no"');
-  const name = learnName();
   for (let i = 0; i < countOfRounds; i += 1) {
-    const num = getRandomInt();
-    console.log(`Question: ${num}`);
-    const evenNumber = !(num % 2); // четное число
-    const responseOfUser = readlineSync.question('Your answer: ');
-    if (responseOfUser === 'yes' && !evenNumber) {
-      console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
-      return console.log(`Let's try again, ${name}`);
-    }
-    if (responseOfUser === 'no' && evenNumber) {
-      console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
-      return console.log(`Let's try again, ${name}`);
-    }
-    if (responseOfUser === 'yes' && evenNumber) {
+    const iteration = createTheGame();
+    const question = getQuestion(iteration);
+    const correctAnswer = getAnswer(iteration);
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     }
-    if (responseOfUser === 'no' && !evenNumber) {
-      console.log('Correct!');
-    } else if (responseOfUser !== 'yes' && responseOfUser !== 'no') {
-      console.log(`'${responseOfUser}' is wrong answer ;(`);
-      return console.log(`Let's try again, ${name}`);
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      return console.log(`Let's try again, ${userName}`);
     }
   }
-  return console.log(`Congratulations, ${name}`);
+  return console.log(`Congratulations, ${userName}`);
 };
-export default learnName;

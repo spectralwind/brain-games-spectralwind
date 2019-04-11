@@ -1,30 +1,24 @@
-**В рамках проекта необходимо реализовать набор мини-игр, запускаемых из консоли. Эти игры похожи на то, что обычно называют "Brain Games".**
 
-# project-lvl1-s478
+# Brain-Games (project-lvl1-s478)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/331ca84ac7a9c7c23cba/maintainability)](https://codeclimate.com/github/spectralwind/project-lvl1-s478/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/331ca84ac7a9c7c23cba/test_coverage)](https://codeclimate.com/github/spectralwind/project-lvl1-s478/test_coverage)
 [![Build Status](https://travis-ci.org/spectralwind/project-lvl1-s478.svg?branch=master)](https://travis-ci.org/spectralwind/project-lvl1-s478)
 
-## Пример игры:
+## Game installation
 
-```sh
-$ brain-progression
+``` sudo npm install -g brain-games-spectralwind ```
 
-Welcome to the Brain Game!
-What number is missing in this progression?
+[![asciicast](https://asciinema.org/a/tOrKnX6njGBXZYtlLx2Epi2tf.svg)](https://asciinema.org/a/tOrKnX6njGBXZYtlLx2Epi2tf)
 
-May I have your name? Tim
-Hello, Tim!
+## Game: "Parity check"
 
-Question: 14 .. 18 20 22 24 26 28
-Your answer: 16
-Correct!
-Question: 5 6 7 8 9 .. 11 12
-Your answer: 10
-Correct!
-Question: 12 15 18 21 .. 27 30 33
-Your answer: 24
-Correct!
-Congratulations, Tim!
-```
+``` brain-even ```
+
+[![asciicast](https://asciinema.org/a/L8g2dbAx0ueDYbRgwskN1h3RH.svg)](https://asciinema.org/a/L8g2dbAx0ueDYbRgwskN1h3RH)
+
+## Game: "Calculator"
+
+``` brain-calc ```
+
+[![asciicast](https://asciinema.org/a/A0EsURfH5BHKkBTzlOnXrJaoV.svg)](https://asciinema.org/a/A0EsURfH5BHKkBTzlOnXrJaoV)
