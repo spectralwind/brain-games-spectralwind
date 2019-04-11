@@ -28,3 +28,11 @@ user@pc-name:~$ brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/A0EsURfH5BHKkBTzlOnXrJaoV.svg)](https://asciinema.org/a/A0EsURfH5BHKkBTzlOnXrJaoV)
+
+## Game: "Greatest common divisor (GCD)"
+
+```console 
+user@pc-name:~$ brain-gcd 
+```
+
+[![asciicast](https://asciinema.org/a/zisSMNU3LZoZthB4fUz8kyypN.svg)](https://asciinema.org/a/zisSMNU3LZoZthB4fUz8kyypN)

@@ -14,6 +14,18 @@ export const calculateTheResult = (x, y, operator) => {
       return console.log("I don't know...");
   }
 };
+export const findGcd = (x, y) => {
+  let firstArg = x;
+  let secondArg = y;
+  while (firstArg !== secondArg) {
+    if (firstArg > secondArg) {
+      firstArg -= secondArg;
+    } else {
+      secondArg -= firstArg;
+    }
+  }
+  return firstArg;
+};
 export const startDialogue = (rules, question, answer) => cons(rules, cons(question, answer));
 export const getText = stage => car(stage);
 export const getQuestion = stage => car(cdr(stage));
