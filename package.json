@@ -1,6 +1,6 @@
 {
   "name": "brain-games-spectralwind",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "the first project on hexlet",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",

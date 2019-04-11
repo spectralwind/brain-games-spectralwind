@@ -1,11 +1,14 @@
-import { getEven, getRandomInt, startDialogue } from '../apps-bg';
+import getRandomInt from '../apps-bg';
 import toBegin from '..';
 
+const isEven = number => !(number % 2);
+
+const description = 'Answer "yes" if number even otherwise answer "no"';
+
 const createTheGame = () => {
-  const rules = 'Answer "yes" if number even otherwise answer "no"';
-  const question = getRandomInt(0, 500);
-  const answer = getEven(question) ? 'yes' : 'no';
-  return startDialogue(rules, question, answer);
+  const question = getRandomInt(0, 50);
+  const answer = isEven(question) ? 'yes' : 'no';
+  return [question, answer];
 };
 
-export default () => toBegin(createTheGame);
+export default () => toBegin(createTheGame, description);
