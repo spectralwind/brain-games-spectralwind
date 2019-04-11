@@ -7,18 +7,24 @@
 
 ## Game installation
 
-``` sudo npm install -g brain-games-spectralwind ```
+```console 
+user@pc-name:~$ sudo npm install -g brain-games-spectralwind 
+```
 
 [![asciicast](https://asciinema.org/a/tOrKnX6njGBXZYtlLx2Epi2tf.svg)](https://asciinema.org/a/tOrKnX6njGBXZYtlLx2Epi2tf)
 
 ## Game: "Parity check"
 
-``` brain-even ```
+```console 
+user@pc-name:~$ brain-even 
+```
 
 [![asciicast](https://asciinema.org/a/L8g2dbAx0ueDYbRgwskN1h3RH.svg)](https://asciinema.org/a/L8g2dbAx0ueDYbRgwskN1h3RH)
 
 ## Game: "Calculator"
 
-``` brain-calc ```
+```console 
+user@pc-name:~$ brain-calc 
+```
 
 [![asciicast](https://asciinema.org/a/A0EsURfH5BHKkBTzlOnXrJaoV.svg)](https://asciinema.org/a/A0EsURfH5BHKkBTzlOnXrJaoV)
