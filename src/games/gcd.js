@@ -1,5 +1,4 @@
-import getRandomInt from '../apps-bg';
-import toBegin from '..';
+import toBegin, { getRandomInt } from '..';
 
 export const findGcd = (x, y) => {
   let num1 = x;
@@ -16,7 +15,7 @@ export const findGcd = (x, y) => {
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const createTheGame = () => {
+const collectGameData = () => {
   const firstArg = getRandomInt(1, 50);
   const secondArg = getRandomInt(1, 50);
   const question = `${firstArg} ${secondArg}`;
@@ -24,4 +23,4 @@ const createTheGame = () => {
   return [question, answer];
 };
 
-export default () => toBegin(createTheGame, description);
+export default () => toBegin(collectGameData, description);

@@ -1,13 +1,11 @@
-import getRandomInt from '../apps-bg';
-import toBegin from '..';
+import toBegin, { getRandomInt } from '..';
 
-const createProgression = () => {
-  const firstElement = getRandomInt(-10, 50);
-  const sequenceStep = getRandomInt(-10, 10);
+const countOfElements = 10;
+
+const createSequence = (element, step) => {
   const sequence = [];
-  const countOfElements = 10;
-  for (let numElement = 1; numElement <= countOfElements; numElement += 1) {
-    const nextElement = firstElement + ((numElement - 1) * sequenceStep);
+  for (let numElement = 0; numElement < countOfElements; numElement += 1) {
+    const nextElement = element + (numElement * step);
     sequence.push(nextElement);
   }
   return sequence;
@@ -15,13 +13,15 @@ const createProgression = () => {
 
 const description = 'What number is missing in the progression?';
 
-const createTheGame = () => {
-  const finalSequence = createProgression();
+const collectGameData = () => {
+  const firstElement = getRandomInt(-10, 50);
+  const sequenceStep = getRandomInt(-10, 10);
+  const finalSequence = createSequence(firstElement, sequenceStep);
   const randomElement = getRandomInt(0, finalSequence.length - 1);
-  const removeElement = finalSequence.splice(randomElement, 1, '..');
+  const removedElement = finalSequence.splice(randomElement, 1, '..');
   const question = finalSequence.join(' ');
-  const answer = String(removeElement);
+  const answer = String(removedElement);
   return [question, answer];
 };
 
-export default () => toBegin(createTheGame, description);
+export default () => toBegin(collectGameData, description);
