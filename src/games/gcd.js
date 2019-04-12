@@ -1,6 +1,6 @@
 import toBegin, { getRandomInt } from '..';
 
-export const findGcd = (x, y) => {
+const findGcd = (x, y) => {
   let num1 = x;
   let num2 = y;
   while (num1 !== num2) {

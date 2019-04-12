@@ -44,3 +44,11 @@ user@pc-name:~$ brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/3qzs1ibcs0DnJRaQ5G9p0n0ms.svg)](https://asciinema.org/a/3qzs1ibcs0DnJRaQ5G9p0n0ms)
+
+## Game: "Prime number"
+
+```console 
+user@pc-name:~$ brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/7enDrv7fdHQej78wCbrGAVEtb.svg)](https://asciinema.org/a/7enDrv7fdHQej78wCbrGAVEtb)
