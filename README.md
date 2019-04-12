@@ -36,3 +36,11 @@ user@pc-name:~$ brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/zisSMNU3LZoZthB4fUz8kyypN.svg)](https://asciinema.org/a/zisSMNU3LZoZthB4fUz8kyypN)
+
+## Game: "Arithmetic progression"
+
+```console 
+user@pc-name:~$ brain-progression 
+```
+
+[![asciicast](https://asciinema.org/a/3qzs1ibcs0DnJRaQ5G9p0n0ms.svg)](https://asciinema.org/a/3qzs1ibcs0DnJRaQ5G9p0n0ms)
