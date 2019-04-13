@@ -1,4 +1,4 @@
-import build from '..';
+import make from '..';
 import getRandomInt from '../utils';
 
 const isPrime = (number) => {
@@ -21,4 +21,4 @@ const collectGameData = () => {
   return [question, answer];
 };
 
-export default () => build(collectGameData, description);
+export default () => make(collectGameData, description);
