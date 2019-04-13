@@ -1,6 +1,7 @@
-import toBegin, { getRandomInt } from '..';
+import build from '..';
+import getRandomInt from '../utils';
 
-const isEven = number => !(number % 2);
+const isEven = number => number % 2 === 0;
 
 const description = 'Answer "yes" if number even otherwise answer "no"';
 
@@ -10,4 +11,4 @@ const collectGameData = () => {
   return [question, answer];
 };
 
-export default () => toBegin(collectGameData, description);
+export default () => build(collectGameData, description);

@@ -1,18 +1,15 @@
-import toBegin, { getRandomInt } from '..';
+import build from '..';
+import getRandomInt from '../utils';
 
 const calculateExpression = (x, y, operator) => {
-  let result = 0;
   switch (operator) {
     case '+':
-      result = x + y;
-      break;
+      return x + y;
     case '-':
-      result = x - y;
-      break;
+      return x - y;
     default:
-      result = x * y;
   }
-  return result;
+  return x * y;
 };
 
 const signs = '+-*';
@@ -29,4 +26,4 @@ const collectGameData = () => {
   return [question, answer];
 };
 
-export default () => toBegin(collectGameData, description);
+export default () => build(collectGameData, description);

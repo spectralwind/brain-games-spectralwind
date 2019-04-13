@@ -1,4 +1,5 @@
-import toBegin, { getRandomInt } from '..';
+import build from '..';
+import getRandomInt from '../utils';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -20,4 +21,4 @@ const collectGameData = () => {
   return [question, answer];
 };
 
-export default () => toBegin(collectGameData, description);
+export default () => build(collectGameData, description);

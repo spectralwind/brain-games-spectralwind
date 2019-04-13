@@ -1,4 +1,5 @@
-import toBegin, { getRandomInt } from '..';
+import build from '..';
+import getRandomInt from '../utils';
 
 const findGcd = (x, y) => {
   let num1 = x;
@@ -23,4 +24,4 @@ const collectGameData = () => {
   return [question, answer];
 };
 
-export default () => toBegin(collectGameData, description);
+export default () => build(collectGameData, description);
