@@ -1,8 +1,8 @@
 
 # Brain Games (project-lvl1-s478)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/331ca84ac7a9c7c23cba/maintainability)](https://codeclimate.com/github/spectralwind/project-lvl1-s478/maintainability)
-[![Build Status](https://travis-ci.org/spectralwind/project-lvl1-s478.svg?branch=master)](https://travis-ci.org/spectralwind/project-lvl1-s478)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3e2a52bd838e9b4ae6be/maintainability)](https://codeclimate.com/github/spectralwind/brain-games-spectralwind/maintainability)
+[![Build Status](https://travis-ci.org/spectralwind/brain-games-spectralwind.svg?branch=master)](https://travis-ci.org/spectralwind/brain-games-spectralwind)
 
 ## Game installation
 
